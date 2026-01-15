@@ -44,5 +44,5 @@ jobs:
         run: |
           aws ecs update-service \
             --cluster ${{ secrets.ECS_CLUSTER }} \
-            --service ecs-logger-service \
+            --service assign1-task-service-r964lqh7 \
             --force-new-deployment
