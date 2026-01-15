@@ -40,10 +40,10 @@ jobs:
         ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.ECR_REPOSITORY }}:latest
 
     - name: Force ECS new deployment
-  run: |
-    aws ecs update-service \
-      --cluster ${{ secrets.ECS_CLUSTER }} \
-      --service ecs-logger-service \
-      --force-new-deployment
+      run: |
+       aws ecs update-service \
+         --cluster ${{ secrets.ECS_CLUSTER }} \
+         --service ecs-logger-service \
+         --force-new-deployment
 
 		
