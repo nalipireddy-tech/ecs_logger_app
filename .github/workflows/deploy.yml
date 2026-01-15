@@ -45,3 +45,4 @@ jobs:
           --cluster ${{ secrets.ECS_CLUSTER }} \
           --service ecs-logger-service \
           --force-new-deployment
+		
